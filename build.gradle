@@ -11,6 +11,14 @@ repositories {
 	mavenCentral()
 }
 
+bootRun.environment([
+		"PAGE_CONTENT": "YellowPages",
+])
+
+test.environment([
+		"PAGE_CONTENT": "YellowPages",
+])
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
@@ -21,11 +29,3 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
-
-bootRun.environment([
-		"PAGE_CONTENT": "YellowPages",
-])
-
-test.environment([
-		"PAGE_CONTENT": "YellowPages",
-])

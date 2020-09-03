@@ -17,7 +17,7 @@ spec:
         app: pages
     spec:
       containers:
-        - image: rbblancos1996/pages:pipeline
+        - image: rbblancos1996/pages:db
           name: pages
           ports:
             - containerPort: 8080
